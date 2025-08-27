@@ -4,7 +4,7 @@ alg = "haarcascade_frontalface_default.xml"
 
 haar_cascade = cv2.CascadeClassifier(alg)
 
-cam = cv2.VideoCapture(1)
+cam = cv2.VideoCapture(0)
 
 while True:
     _,img = cam.read()
@@ -18,3 +18,4 @@ while True:
         break
 cam.release()
 cv2.destroyAllWindows()
+
